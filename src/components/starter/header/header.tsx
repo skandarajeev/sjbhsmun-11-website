@@ -9,7 +9,7 @@ export default component$(() => {
 
       <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 
-      <nav class="md:flex md:justify-between md:items-center md:mx-auto dark:bg-gray-900  w-full z-20 top-0 left-0  dark:border-gray-600 m-3 overflow-hidden p-3">
+      <nav class="md:flex md:justify-between md:items-center md:mx-auto absolute  dark:bg-gray-900  w-full z-20 top-0 left-0  dark:border-gray-600 m-3 overflow-hidden p-3">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
           <div class="flex md:order-2">
@@ -21,7 +21,7 @@ export default component$(() => {
             </button>
           </div>
           <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 text-white  md:gap-[4vw] gap-8">
+            <ul class="flex flex-col sm:absolute p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 text-white  md:gap-[4vw] gap-8">
               <li>
                 <a href="/" class="block py-2 pl-3 pr-4  rounded md:bg-transparent  md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
               </li>
