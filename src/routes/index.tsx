@@ -1,9 +1,30 @@
+/* eslint-disable qwik/jsx-img */
 import { component$ } from "@builder.io/qwik";
 import style from 'styles.css'
 import logo from '../media/MUN LOGO.png';
 import circle from '../media/Ellipse 1.svg';
 import bgGradient from '../media/backgroundGradient.png'
 
+interface eventinfo{
+  name : string;
+  details: string;
+
+}
+const Event = component$((details : eventinfo)=> {
+
+
+
+return(  
+
+  <div class="mt-[1rem] gradient-zero mx-auto w-[70vw] h-[140px] rounded-lg p-[10px] ">
+    <div class="flex justify-center flex-col  gradient-zeroOne  rounded-md  w-[100%] h-[100%]">
+      <p class="text-white font-poppins text-center text-5xl align-middle ">{details.name}</p>
+    </div>
+  </div>
+  )
+
+
+})
 
 
 export default component$(() => {
@@ -69,41 +90,12 @@ export default component$(() => {
           </div>
 
           <div>
-            <div class="mt-[1rem] gradient-zero mx-auto w-[70vw] h-[140px] rounded-lg p-[10px] ">
-              <div class="flex justify-center flex-col  gradient-zeroOne  rounded-md  w-[100%] h-[100%]">
-                <p class="text-white font-poppins text-center text-5xl align-middle ">Committee Name</p>
-              </div>
-            </div>
-
-            <div class="mt-[1rem] gradient-zero mx-auto w-[70vw] h-[140px] rounded-lg p-[10px] ">
-              <div class="flex justify-center flex-col  gradient-zeroOne  rounded-md  w-[100%] h-[100%]">
-                <p class="text-white font-poppins text-center text-5xl align-middle ">Committee Name</p>
-              </div>
-            </div>
-
-            <div class="mt-[1rem] gradient-zero mx-auto w-[70vw] h-[140px] rounded-lg p-[10px] ">
-              <div class="flex justify-center flex-col  gradient-zeroOne  rounded-md  w-[100%] h-[100%]">
-                <p class="text-white font-poppins text-center text-5xl align-middle ">Committee Name</p>
-              </div>
-            </div>
-
-            <div class="mt-[1rem] gradient-zero mx-auto w-[70vw] h-[140px] rounded-lg p-[10px] ">
-              <div class="flex justify-center flex-col  gradient-zeroOne  rounded-md  w-[100%] h-[100%]">
-                <p class="text-white font-poppins text-center text-5xl align-middle ">Committee Name</p>
-              </div>
-            </div>
-
-            <div class="mt-[1rem] gradient-zero mx-auto w-[70vw] h-[140px] rounded-lg p-[10px] ">
-              <div class="flex justify-center flex-col  gradient-zeroOne  rounded-md  w-[100%] h-[100%]">
-                <p class="text-white font-poppins text-center text-5xl align-middle ">Committee Name</p>
-              </div>
-            </div>
-
-            <div class="mt-[1rem] gradient-zero mx-auto w-[70vw] h-[140px] rounded-lg p-[10px] ">
-              <div class="flex justify-center flex-col  gradient-zeroOne  rounded-md  w-[100%] h-[100%]">
-                <p class="text-white font-poppins text-center text-5xl align-middle ">Committee Name</p>
-              </div>
-            </div>
+            <Event name = "Comittee Name" details = ""/>
+            <Event name = "Comittee Name" details = ""/>
+            <Event name = "Comittee Name" details = ""/>
+            <Event name = "Comittee Name" details = ""/>
+            <Event name = "Comittee Name" details = ""/>
+            <Event name = "Comittee Name" details = ""/>
           </div>
         </div>
       </section>
